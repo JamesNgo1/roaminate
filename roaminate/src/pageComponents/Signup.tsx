@@ -1,13 +1,13 @@
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 import Password from "../textfieldComponents/Password";
-import Email from "../textfieldComponents/Username";
+import Username from "../textfieldComponents/Username";
 import { Button } from "@mui/material";
 import { useState } from "react";
 
 /**
  * There is going to be a parent and child relationship with this component
- * and with textfield components with the email and password
+ * and with textfield components with the Username and password
  *
  * future notes is the child component will be manipulating the useState variables of the parent
  *
@@ -18,7 +18,9 @@ function Signup() {
   const [password, setPassword] = useState("");
 
   const buttonHandler = () => {
-    console.log(`The email is ${username} \nThe password is ${password} \n  `);
+    console.log(
+      `The Username is ${username} \nThe password is ${password} \n  `
+    );
 
     setUsername("");
     setPassword("");
@@ -36,8 +38,8 @@ function Signup() {
           <h1> Sign up </h1>
 
           <div>
-            <p>Email</p>
-            <Email username={username} setUsername={setUsername}></Email>
+            <p>Username</p>
+            <Username username={username} setUsername={setUsername}></Username>
           </div>
 
           <div>

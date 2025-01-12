@@ -1,9 +1,10 @@
 import Signup from "./pageComponents/Signup";
+import Login from "./pageComponents/Login";
 
 function App() {
   return (
     <>
-      <Signup></Signup>
+      <Login></Login>
     </>
   );
 }
